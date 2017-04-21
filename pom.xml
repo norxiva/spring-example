@@ -17,7 +17,6 @@
         <module>spring-boot-jersey</module>
         <module>spring-boot-jetty-jersey</module>
         <module>spring-boot-jetty-jersey-usespringdepend</module>
-        <module>spring-boot-jetty-jersey-mybatis</module>
     </modules>
     <packaging>pom</packaging>
 
