@@ -11,9 +11,6 @@
 
     <artifactId>spring-boot-jersey</artifactId>
 
-    <name>Spring Boot Jersey Example</name>
-    <description>Spring Boot Jersey Example</description>
-
     <properties>
         <start-class>plujezi.spring.example.App</start-class>
     </properties>
@@ -22,19 +19,8 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jersey</artifactId>
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>org.springframework.boot</groupId>-->
-                    <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-jetty</artifactId>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -83,16 +69,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.5.2.RELEASE</version>
             </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
 

@@ -9,40 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-jetty-jersey</artifactId>
-
-    <properties>
-        <start-class>plujezi.spring.example.JettyApp</start-class>
-    </properties>
+    <artifactId>spring-boot-jetty-jersey-mybatis</artifactId>
 
     <dependencies>
-
         <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-server</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jersey</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-        <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.glassfish.jersey.ext</groupId>
-            <artifactId>jersey-spring3</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jersey.ext</groupId>
-            <artifactId>jersey-bean-validation</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-jackson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-multipart</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
